@@ -1,0 +1,183 @@
+body{
+    background-color: #0D0D0D;
+}
+
+header input::placeholder{
+    color: rgba(255, 255, 255, 0.781)  !important; 
+}
+
+nav{
+    transition: .5s;
+    padding-inline: 30px;
+}
+
+header input{
+    outline: none ;
+    border: white 2px solid !important ;
+    box-shadow: none !important;
+}
+.naviii{
+    background-color: #F8F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.pointer i{
+    font-size: 25px;
+
+}
+
+nav ul li{
+    color: white
+    ;transition: .3s;
+    cursor: pointer;
+}
+nav ul li a{
+    color: white
+    ;transition: .3s;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color:  #DC3445
+   
+}
+nav ul li:hover{
+    color: #DC3445
+}
+
+div .pointer{
+    cursor: pointer;
+}
+
+nav span{
+    color: #DC3445;
+}
+
+nav span:hover{
+    color: #dc3445cc;
+    cursor: pointer;
+}
+
+nav .copyRight{
+    font-size: 18px;
+}
+
+aside i{
+    cursor: pointer;
+}
+
+.filmLayer{
+    background-color: rgba(0, 0, 0, 0.555);
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.film img{
+    transition: .8s;
+}
+
+.film:hover img {
+    transform: scale(1.2);
+    filter: blur(3px);
+
+}
+
+.imgRotate{
+    transition: .8s;
+}
+
+.film:hover .imgRotate{
+    transform: rotate(8deg);
+}
+
+
+.filmLayer h3{
+    top: -100px;
+    transition: .8s;
+}
+.film:hover .filmLayer h3{
+    top: 0;
+}
+
+.film:hover .filmLayer{
+   opacity: 1;
+}
+.filmLayer p{
+    right: 120%;
+    transition: .8s;
+}
+
+.film:hover .filmLayer p{
+    right:  0 ;
+}
+
+.filmLayer i , span{
+    transition: .8s;
+    bottom: -100%;
+}
+.film:hover .filmLayer span {
+    bottom: 0;
+}
+.film:hover .filmLayer i {
+    bottom: 0;
+}
+
+.up{
+    cursor: pointer;
+}
+
+section input{
+    border:none;
+    outline: none ;
+    box-shadow: none ;
+}
+
+section input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    z-index: 99999999;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.loading{
+    z-index: 999999999;
+}
+
+@media(max-width:678px){
+    .naviii{
+        background-color:transparent;
+        justify-content: center;
+    }
+    .pointer{
+        color: white;
+        
+    }
+    .naviii img, .fs-6{
+        display: none;
+    }
+}
